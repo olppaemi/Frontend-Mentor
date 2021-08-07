@@ -1,0 +1,84 @@
+$border-radius: rem(5);
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: rem(327);
+  background-color: white;
+  border-radius: rem(10);
+  margin-left: auto;
+  margin-right: auto;
+  padding: rem(24);
+
+  @include breakpoint-down(sm) {
+    width: rem(327);
+  }
+
+  @include breakpoint-up(sm) {
+    width: rem(500);
+  }
+
+  @include breakpoint-up(lg) {
+    width: 100%;
+  }
+
+  & > * + * {
+    margin-top: rem(16);
+
+    @include breakpoint-up(lg) {
+      margin-top: rem(20);
+    }
+  }
+
+  input {
+    width: 100%;
+    height: rem(56);
+    padding-left: rem(20);
+    padding-right: rem(20);
+    border-radius: $border-radius;
+    border: 1px solid var(--grayish-blue);
+    outline-color: var(--red);
+
+    &::placeholder {
+      font-family: "Poppins", sans-serif;
+      font-weight: 600;
+    }
+  }
+
+  label {
+    position: absolute;
+    width: 0;
+    height: 0;
+    font-size: rem(32);
+    text-indent: rem(10);
+    overflow: hidden;
+  }
+
+  button {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: rem(1);
+    width: 100%;
+    height: rem(56);
+    border: none;
+    background-color: var(--green);
+    border-radius: $border-radius;
+  }
+
+  p {
+    text-align: center;
+    color: var(--grayish-blue);
+    font-size: rem(10.5);
+    padding-left: rem(24);
+    padding-right: rem(24);
+  }
+}
+
+.text-red {
+  color: var(--red);
+}
+
+.bold {
+  font-weight: 700;
+}

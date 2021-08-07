@@ -1,0 +1,36 @@
+.main {
+  flex: 1;
+
+  .try {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    height: rem(88);
+    background-color: var(--blue);
+    border-radius: rem(10);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: rem(24);
+
+    @include breakpoint-down(sm) {
+      width: rem(327);
+    }
+
+    @include breakpoint-up(sm) {
+      width: rem(500);
+    }
+
+    @include breakpoint-down(lg) {
+      span {
+        display: block;
+      }
+    }
+
+    @include breakpoint-up(lg) {
+      width: 100%;
+      height: rem(60);
+    }
+  }
+}
