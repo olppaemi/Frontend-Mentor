@@ -23,17 +23,30 @@
     </header>
     <main class="main">
       <div class="try">
-        <p><span>Try it free 7 days then&nbsp</span><span>$20/mo. thereafter</span></p>
+        <p><span class="sm-block"><span class="bold">Try it free 7 days</span> then&nbsp</span><span
+            class="sm-block">$20/mo. thereafter</span></p>
       </div>
-      <form class="form" novalidate>
-        <label for="firstName">First Name</label>
-        <input type="text" name="firstName" id="firstName" placeholder="First Name">
-        <label for="lastName">Last Name</label>
-        <input type="text" name="lastName" id="lastName" placeholder="Last Name">
-        <label for="firstName">Email Address</label>
-        <input type="email" name="email" id="email" placeholder="Email Address">
-        <label for="password">Password</label>
-        <input type="password" name="passwrod" id="password" placeholder="Password">
+      <form class="form" novalidate autocomplete="off">
+        <ul>
+          <li class="firstName">
+            <label for="firstName">First Name</label>
+            <input type="text" name="firstName" id="firstName" placeholder="First Name">
+          </li>
+
+          <li class="lastName">
+            <label for="lastName">Last Name</label>
+            <input type="text" name="lastName" id="lastName" placeholder="Last Name">
+          </li>
+          <li class="email">
+            <label for="email">Email Address</label>
+            <input type="email" name="email" id="email" placeholder="Email Address">
+          </li>
+          <li class="password">
+            <label for="password">Password</label>
+            <input type="password" name="passwrod" id="password" placeholder="Password">
+          </li>
+        </ul>
+
         <button type="submit" class="btn submit">
           Claim your free trial
         </button>
@@ -44,10 +57,7 @@
     </main>
   </div>
 
-
-
-
-
+  <script src="/dist/script.js"></script>
 </body>
 
 </html>

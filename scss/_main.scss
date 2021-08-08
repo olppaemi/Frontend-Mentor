@@ -14,16 +14,8 @@
     margin-right: auto;
     margin-bottom: rem(24);
 
-    @include breakpoint-down(sm) {
-      width: rem(327);
-    }
-
-    @include breakpoint-up(sm) {
-      width: rem(500);
-    }
-
     @include breakpoint-down(lg) {
-      span {
+      span.sm-block {
         display: block;
       }
     }

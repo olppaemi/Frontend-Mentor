@@ -1,5 +1,5 @@
 .container {
-  max-width: rem(500);
+  max-width: calc(min(87%, 555px));
   margin: rem(95) auto rem(67) auto;
 
   @include breakpoint-up(lg) {
